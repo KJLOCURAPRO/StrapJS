@@ -1,0 +1,150 @@
+<html><head><base href="." target="_blank"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StrapJS - Librería JavaScript</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<nav>
+    <div class="nav-container">
+        <h1 style="color: var(--accent)">StrapJS</h1>
+        <div class="menu-toggle" id="menuBut">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav_links">
+            <a href="#" data-section="inicio">Inicio</a>
+            <a href="#" data-section="como-usar">Cómo Usar</a>
+            <a href="#" data-section="descargar">Descargar</a>
+            <a href="#" data-section="acerca">Acerca de</a>
+        </div>
+    </div>
+</nav>
+
+<section id="inicio" class="page-section section-visible">
+    <div>
+        <svg class="floating-logo" viewBox="0 0 100 100" width="200" height="200">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <text x="50" y="50" text-anchor="middle" dy=".3em" fill="var(--accent)" font-size="20">Strap.js</text>
+        </svg>
+        <h1>StrapJS</h1>
+        <p>Framework JavaScript moderno para aplicaciones web potentes</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="var(--accent)">
+                    <path d="M12 2L1 21h22L12 2zm0 3.83L19.13 19H4.87L12 5.83z"/>
+                </svg>
+                <h3>Rendimiento</h3>
+                <p>Optimizado para velocidad</p>
+            </div>
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="var(--accent)">
+                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                </svg>
+                <h3>Modular</h3>
+                <p>Componentes reutilizables</p>
+            </div>
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="var(--accent)">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                </svg>
+                <h3>Seguro</h3>
+                <p>Protección incorporada</p>
+            </div>
+        </div>
+        <div style="margin-top: 4rem; display: flex; gap: 2rem; justify-content: center;">
+            <a href="#" data-section="descargar" class="download-button">Descargar Ahora</a>
+            <a href="#como-usar" class="download-button" style="background: transparent; border: 2px solid var(--accent); color: var(--accent);">Cómo Usar</a>
+        </div>
+    </div>
+</section>
+
+<section id="como-usar" class="page-section section-hidden">
+    <h1 style="color: rgba(255, 255, 0);">Cómo Usar</h1>
+            <h2>Importar algunas caracteristicas...</h2>
+        <p>Principalmente para aprender a usar StarpJS se necesita saber algunas de sus caracteristicas,o en si, las que usted necesite usar.</p>
+        
+            <h1 style="color: rgba(255, 255, 0);">GameDo</h1>
+            <p>Esta caracteristica es como una function pero mucho mas rapida y con mas capacidad lo cual hace que sea mucho mejor. Se especializa mas en la creacion de videojuegos.</p>
+            <div class="code-preview">
+                <code>
+                   <g>// importar la caracteristica</g>
+                    <mora>import</mora> {<celes>gameDo</celes>}<mora>from</mora><yellow>'ruta/a/strap.js'</yellow>
+                    <br>
+                    </code>
+                    </div>
+                <h1 style="color: rgba(255, 255, 0);">utilizarla para un Hola Mundo!</h1>
+                <p>Aprenderemos un pequeño ejemplo de como hacer la estructura de un simple hola mundo con el "gameDo" </p>
+                <div class="code-preview">
+                    <code>
+                        <g>// hacer la siguiente estructura</g>
+                        <yellow>gameDo</yellow>(<blue>()</blue)<mora>=></mora><celes>{</celes><br>
+                              <lime>  console</lime><yellow>.log</yellow> (<g>'Hola Mundo'</g>)<br>
+                             <w>)</w><celes>}</celes>
+                             
+                    </code>
+                </div>
+            
+    <div class="code-preview">
+        <code>
+            import Strap from 'strapjs';<br><br>
+            // Inicializar<br>
+            const app = new Strap();<br>
+            app.init();
+        </code>
+    </div>
+    <div class="testimonial">
+        <p>"StrapJS tiene potencial, pero esta infravalorada"</p>
+        <small>- Keiler Ortega</small>
+    </div>
+</section>
+
+<section id="descargar" class="page-section section-hidden">
+    <h2>Descargar</h2>
+    <div class="download-card">
+        <h3>Versión 0.2.7-beta</h3>
+        <p>Tamaño: 11.92KB (minificado)</p>
+        <a href="files/strap.min.js" class="download-button">Descargar StrapJS [MIN]</a>
+    </div>
+    <div class="download-card">
+        <h3>Versión 0.2.7-beta</h3>
+        <p>Tamaño: 16.30KB</p>
+        <a href="files/strap.js" class="download-button" download="files/strap.js">Descargar StarpJS</a>
+    </div>
+    <div class="download-card">
+        <h3>Versión 0.0.5-beta</h3>
+        <p>Tamaño: 5.31KB</p>
+        <a href="files/strap[0-0-5].js" class="download-button" download="strap.js">Descargar StarpJS</a>
+        <p style="color:red;">Desactualizada</p>
+    </div>
+</section>
+
+<section id="acerca" class="page-section section-hidden">
+    <h2>Acerca de</h2>
+    <p>StrapJS es un framework JavaScript moderno diseñado para crear aplicaciones web rápidas y eficientes. Con un enfoque en el rendimiento y la facilidad de uso, StrapJS proporciona herramientas poderosas para desarrolladores.</p>
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Rendimiento optimizado</h3>
+            <p>Máxima velocidad y eficiencia. Un framework optimizado sin hacer que tu programa vaya lento o tenga errores.</p>
+        </div>
+        <div class="feature-card">
+            <h3>API intuitiva</h3>
+            <p>No solo es facil de aprender si no de usar una API la cual hace que todo sea más facil en el trabajo de: HTML JS Y CSS</p>
+        </div>
+        <div class="feature-card">
+            <h3>Documentación completa</h3>
+            <p>Recursos detallados para el aprendizaje del uso del framework "StrapJS" facilitando su uso.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Soporte activo</h3>
+            <p>Nuestra comunidad comprometida está siempre disponible para ayudarte. Únete a nuestro foro de desarrolladores, participa en discusiones y comparte tus experiencias.</p>
+        </div>
+    </div>
+</section>
+
+<script src="public.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
